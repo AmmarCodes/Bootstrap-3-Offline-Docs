@@ -1,12 +1,12 @@
-
 /* Template-specific stuff
  *
- * Customizations just for the template—these are not necessary for anything
+ * Customizations just for the template; these are not necessary for anything
  * with disabling the responsiveness.
  */
 
 /* Account for fixed navbar */
 body {
+  min-width: 970px;
   padding-top: 70px;
   padding-bottom: 30px;
 }
@@ -28,8 +28,8 @@ body {
 
 /* Reset the container */
 .container {
-  max-width: none !important;
   width: 970px;
+  max-width: none !important;
 }
 
 /* Demonstrate the grids */
@@ -37,8 +37,8 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #eee;
-  border: 1px solid #ddd;
   background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
   border: 1px solid rgba(86,61,124,.2);
 }
 
@@ -64,6 +64,9 @@ body {
 .navbar-toggle {
   display: none;
 }
+.navbar-collapse {
+  border-top: 0;
+}
 
 .navbar-brand {
   margin-left: -15px;
@@ -87,31 +90,31 @@ body {
 }
 
 /* Undo custom dropdowns */
-.navbar .open .dropdown-menu {
+.navbar .navbar-nav .open .dropdown-menu {
   position: absolute;
   float: left;
   background-color: #fff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, .15);
   border-width: 0 1px 1px;
   border-radius: 0 0 4px 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
-.navbar .open .dropdown-menu > li > a {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: #333;
 }
-.navbar .open .dropdown-menu > li > a:hover,
-.navbar .open .dropdown-menu > li > a:focus,
-.navbar .open .dropdown-menu > .active > a,
-.navbar .open .dropdown-menu > .active > a:hover,
-.navbar .open .dropdown-menu > .active > a:focus {
+.navbar .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar .navbar-nav .open .dropdown-menu > .active > a,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > a:focus {
   color: #fff !important;
   background-color: #428bca !important;
 }
-.navbar .open .dropdown-menu > .disabled > a,
-.navbar .open .dropdown-menu > .disabled > a:hover,
-.navbar .open .dropdown-menu > .disabled > a:focus {
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.navbar .navbar-nav .open .dropdown-menu > .disabled > a:focus {
   color: #999 !important;
   background-color: transparent !important;
 }
