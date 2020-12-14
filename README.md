@@ -1,4 +1,4 @@
-> The repository has been stale for long time and is no longer maintained.
+> **Note:** The repository is outdated and no longer maintained.
 
 # Bootstrap 3 Offline Docs
 
