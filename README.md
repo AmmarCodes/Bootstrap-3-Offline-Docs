@@ -1,3 +1,5 @@
+> The repository has been stale for long time and is no longer maintained.
+
 # Bootstrap 3 Offline Docs
 
 *Up to date with v3.3.5*
